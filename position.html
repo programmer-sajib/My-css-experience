@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Position</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+      h1 {
+        color: crimson;
+      }
+
+      .container {
+        width: 100%;
+      }
+      .container > div {
+        width: 200px;
+        height: 200px;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Learning Position</h1>
+      <p>
+        This is a simple webpage to demonstrate CSS positioning techniques. The
+        position of the text and the box is controlled by CSS.
+      </p>
+    </section>
+    <section class="container">
+      <div class="red">red</div>
+      <div class="green">green</div>
+      <div class="blue">blue</div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+css box model defines 5 property 
+1.border
+2.margin
+3.padding
+4.width
+5.height
+ */
+body {
+  height: 100vh;
+  margin-bottom: 25px;
+}
+h1 {
+  font-size: 5vw;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 0 2rem 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 100%));
+  gap: 0.3rem;
+  justify-items: center;
+}
+
+.blog {
+  border: 1px solid crimson;
+  margin: 1%;
+  padding: 1%;
+  width: 99%;
+  height: 100%;
+  border-radius: 0.5rem;
+  font-size: 10px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2vw;
+}
+
+p {
+  text-align: justify;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 99%));
+  }
+  p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .container {
+    grid-template-columns: repeat(1, minmax(0, 99%));
+  }
+  p {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 6vw;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  body {
+    margin-bottom: 50px;
+  }
+}
